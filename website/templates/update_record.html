@@ -3,14 +3,13 @@
 {% block content %}
 
 <div class="col-mid-6 offset-md-3">
-    <h1>ADD RECORD</h1>
+    <h1>UPDATE RECORD</h1>
     <br>
     <form method="POST" action="">
         {% csrf_token %}
-
+        
         {{ form.as_p }}
-        <button type="submit" class="btn btn-primary btn-sm" >Add Record</button>
-        <a href="{% url 'home' %}" class="btn btn-secondary btn-sm">Back</a>
+        <button type="submit" class="btn btn-primary btn-sm" >Update Record</button>
     </form>
 </div>
 
